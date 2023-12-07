@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Unit tests for UI5 Walkthrough</title>
+	<title>Integration tests for the UI5 Walkthrough</title>
 	<meta charset="utf-8">
 
 	<script
 		id="sap-ui-bootstrap"
-		src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+		src="https://openui5.hana.ondemand.com/resources/sap/ui/thirdparty/qunit-2.css"
+		data-sap-ui-theme="sap_horizon"
 		data-sap-ui-resourceroots='{
 			"ui5.walkthrough": "../../"
 		}'
+		data-sap-ui-animation="false"
+		data-sap-ui-compatVersion="edge"
 		data-sap-ui-async="true">
 	</script>
 
@@ -17,14 +20,11 @@
 
 	<script src="https://openui5.hana.ondemand.com/resources/sap/ui/thirdparty/qunit-2.js"></script>
 	<script src="https://openui5.hana.ondemand.com/resources/sap/ui/qunit/qunit-junit.js"></script>
-	<script src="https://openui5.hana.ondemand.com/resources/sap/ui/qunit/qunit-coverage.js"></script>
-	<script src="https://openui5.hana.ondemand.com/resources/sap/ui/thirdparty/sinon.js"></script>
-	<script src="https://openui5.hana.ondemand.com/resources/sap/ui/thirdparty/sinon-qunit.js"></script>
-    
-	<script src="unitTests.qunit.js"></script>
+
+	<script src="opaTests.qunit.js"></script>
 </head>
 <body>
-	<div id="qunit"/>
-	<div id="qunit-fixture"/>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
 </body>
 </html>
